@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/*.container, .kalendae {
+  margin: 0 auto;
+  max-width: 92%;
+}*/
+table {
+  margin-left: 100px;
+  float: left;
+  outline: 2px solid black;
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-family: sans-serif;
+}
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: lightblue;
+}
+th {
+  background-color: lightgrey;
+}
+td {
+  width: 200px;
+  text-align: center;
+}
+tr, td, th, caption {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 18px;
+}
+@media screen and (max-width: 640px) {
+  table{
+    margin-top: 50px;
+    float: none;
+  }
+}

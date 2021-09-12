@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="build/kalendae.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="skins/css/metal.css" type="text/css">
+	<link rel="stylesheet" href="skins/css/table_style.css">
+	<script src="build/kalendae.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css" media="screen">
+		.kalendae .k-days span.closed {
+			background:red;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript" charset="utf-8">
+		new Kalendae(document.body, {
+			months:1,
+			mode:'range',
+			selected:[Kalendae.moment().subtract({M:1}), Kalendae.moment().add({M:1})]
+		});
+	</script>
+	<table>
+		<caption>Реестр звонков</caption>
+		<tr>
+			<th>Абонент</th>
+			<th>Количество звонков</th>
+		</tr>
+		<tr>
+			<td>89586987654</td>
+			<td>45 раз</td>
+		</tr>
+	</table>
+  </body>
+  </html>
